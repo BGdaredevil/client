@@ -131,9 +131,6 @@
   flex-direction: column;
 }
 
-.result-container {
-}
-
 .result {
   display: flex;
   justify-content: stretch;
@@ -148,13 +145,13 @@
 }
 
 .positive {
-  background-color: green;
+  background-color: #78bc61;
 }
 
 .neutral {
-  background-color: yellow;
+  background-color: #a68226;
 }
 
 .negative {
-  background-color: red;
+  background-color: #69140e;
 }

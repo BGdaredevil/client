@@ -71,15 +71,15 @@ function Apply() {
         <div className="result-container">
           {result === 1 ? (
             <section className="result positive">
-              <h1>YES</h1>
+              <h1>Great you are approved!</h1>
             </section>
           ) : result === 0 ? (
             <section className="result neutral">
-              <h1>Maybe</h1>
+              <h1>Please contact us at 555-cash-now</h1>
             </section>
           ) : (
             <section className="result negative">
-              <h1>No</h1>
+              <h1>We cannot approve your request</h1>
             </section>
           )}
         </div>
