@@ -6,6 +6,7 @@ function Navigation() {
   const { user, logout } = useContext(AuthContext);
   return (
     <nav>
+      <img src="/coin.png" alt="loading" />
       <ul>
         {user ? (
           <>

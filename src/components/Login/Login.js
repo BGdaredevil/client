@@ -38,7 +38,7 @@ function Login() {
 
   return (
     <section className="login">
-      <div>
+      <div className="form-container">
         <h1>Login</h1>
         <form method="post" onSubmit={onSubmit}>
           <label htmlFor="username">Username</label>

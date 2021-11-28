@@ -53,13 +53,13 @@ function Apply() {
 
   return (
     <section className="apply">
-      <div>
+      <div className="form-container">
         <h1>Apply now!</h1>
         <form method="post" onSubmit={onSubmit}>
           <label htmlFor="product">Product</label>
           <input type="text" name="product" id="product" />
           <label htmlFor="amount">Amount</label>
-          <input type="text" name="amount" id="amount" />
+          <input type="number" name="amount" id="amount" />
           <label htmlFor="duration">Duration</label>
           <input type="number" name="duration" id="duration" />
           <input type="submit" value="apply" />
@@ -68,10 +68,20 @@ function Apply() {
       {result === undefined ? (
         ""
       ) : (
-        <div>
-          <section className="result">
-            {result === 1 ? <h1>YES</h1> : result === 0 ? <h1>Maybe</h1> : <h1>No</h1>}
-          </section>
+        <div className="result-container">
+          {result === 1 ? (
+            <section className="result positive">
+              <h1>YES</h1>
+            </section>
+          ) : result === 0 ? (
+            <section className="result neutral">
+              <h1>Maybe</h1>
+            </section>
+          ) : (
+            <section className="result negative">
+              <h1>No</h1>
+            </section>
+          )}
         </div>
       )}
     </section>

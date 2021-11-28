@@ -1,38 +1,160 @@
-.App {
+.container {
+  margin: 0px auto 4px 0;
+  height: 480px;
+  display: flex;
+  top: 0%;
+  left: 50%;
+  width: 40%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.greeting {
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  justify-content: center;
   display: flex;
   flex-direction: column;
+  position: relative;
+  flex: 1;
+  margin-top: 11.6em;
+  width: 60%;
+  background-color: #726e97;
+  box-shadow: 0px 3px 8px 5px #83b5d1;
+}
+
+.greeting > h1 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  line-height: 1.1;
+  color: #98b06f;
+  font-family: inherit;
+  pointer-events: auto;
+  position: relative;
+  font-weight: normal;
+  word-wrap: break-word;
+}
+
+.greeting > a {
+  border: 1px solid #83b5d1;
+  background: #83b5d1;
+  font-size: 18px;
+  color: #7f557d;
+  margin-top: 20px;
+  padding: 10px 43px;
+  text-transform: uppercase;
+  text-transform: capita;
+  transition: 0.4s;
+}
+
+.greeting > a:hover {
+  background: #6aa6c8;
+  /* padding: 10px 80px; */
+}
+
+.form-container {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px 0;
+  background: #7f557d;
+  transition: 0.2s;
+  border-radius: 80px;
+  box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, 0.5);
 }
 
-.App-link {
-  color: #61dafb;
+.form-container > form {
+  width: 80%;
+  height: 70%;
+  padding: 10%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  background-color: #726e97;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  border-radius: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-container > h1 {
+  font-weight: 350;
+  font-size: 27px;
+  margin-bottom: 0.8em;
+  margin-top: 0.8em;
+}
+
+.form-container input {
+  padding: 5px;
+  font-size: 15px;
+  border: 1px solid #79aecd;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(113, 162, 195, 0.3);
+  border-radius: 10px;
+  color: #ffe8d4;
+  outline: none;
+}
+
+.form-container input[type="submit"] {
+  border: 1px solid #79aecd;
+  border-left: none;
+  border-right: none;
+  background: rgba(113, 162, 195, 0.3);
+  font-size: 18px;
+  color: #ffe8d4;
+  margin-top: 20px;
+  padding: 10px 43px;
+  cursor: pointer;
+  transition: 0.4s;
+  text-transform: uppercase;
+}
+.form-container input[type="submit"]:hover {
+  background: rgba(113, 162, 195, 0.5);
+  padding: 10px 80px;
+}
+
+.login,
+.apply {
+  /* background-color: brown; */
+  margin: auto;
+  width: 60%;
+  height: 600px;
+  margin-top: 5%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  color: #ffe8d4;
+  text-transform: uppercase;
+  flex-direction: column;
+}
+
+.result-container {
+}
+
+.result {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  box-shadow: 3px 0px 20px 6px rgba(0, 0, 0, 1);
+  padding: 5%;
+  border-radius: 50px;
+}
+
+.result > h1 {
+  flex-grow: 1;
+}
+
+.positive {
+  background-color: green;
+}
+
+.neutral {
+  background-color: yellow;
+}
+
+.negative {
+  background-color: red;
 }
